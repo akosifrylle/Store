@@ -26,6 +26,7 @@ namespace Store.Services
 
         public void Delete(User user)
         {
+            _userDao.Delete(user);
             throw new NotImplementedException();
         }
 
