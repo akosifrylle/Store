@@ -5,8 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using Store.Entities;
+using Store.NHibernate.Repo;
 
-namespace Store.NHibernate.Repo
+namespace Store.NHibernate
 {
     public class NHRepoAutoMapperProfile : Profile
     {
@@ -14,6 +15,8 @@ namespace Store.NHibernate.Repo
         {
             Mapper.CreateMap<User, UserRepo>();
             Mapper.CreateMap<UserRepo, User>();
+            Mapper.CreateMap<Product, ProductRepo>();
+            Mapper.CreateMap<ProductRepo, Product>();
         }
     }
 }

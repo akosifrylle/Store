@@ -31,10 +31,16 @@ namespace Store.NHibernate.Dao
 
         public User Get(string username, string password)
         {
+            
             using (var session = NHibernateHelper.OpenSession())
             {
+                //Using QueryOver
                 var user = session.QueryOver<UserRepo>()
                     .Where(u => u.Username == username && u.Password == password).List().FirstOrDefault();
+
+                //Using HQL
+                //var user = session.CreateQuery("from User u where u.FirstName=:un")
+                    //.SetString("un", "Frylle").List<UserRepo>();
                 return Mapper.Map<User>(user);
             }
         }

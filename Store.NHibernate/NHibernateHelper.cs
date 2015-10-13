@@ -37,8 +37,6 @@ namespace Store.NHibernate
                     m => m.FluentMappings.AddFromAssemblyOf<UserMap>()
                 )
                 .BuildSessionFactory();
-            //var mappingAssembly = Assembly.Load("Store.NHibernate.SqlServer");
-
         }
 
         public static ISession OpenSession()
