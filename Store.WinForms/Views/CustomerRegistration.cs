@@ -21,7 +21,7 @@ namespace Store.WinForms.Views
             InitializeComponent();
             this._customerService = customerService;
         }
-
+        
         private void btnRegister_Click(object sender, EventArgs e)
         {
             var user = new User()

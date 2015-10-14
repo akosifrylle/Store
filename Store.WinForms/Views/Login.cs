@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Practices.Unity;
 using Store.Services;
 
 namespace Store.WinForms.Views
@@ -31,6 +32,8 @@ namespace Store.WinForms.Views
             if (user != null)
             {
                 MessageBox.Show("Customer Found");
+                Hide();
+                new CustomerRegistration(new UserService()).Show();
             }
             else
             {
