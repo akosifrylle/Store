@@ -1,1 +1,11 @@
 packages/
+Store.Web/bin/System.Web.WebPages.Razor.xml
+Store.Web/bin/
+Store.WinForms/obj/
+Store.WinForms/bin/
+Store.NHibernate/bin/
+Store.NHibernate/obj/
+Store.Services/bin/
+Store.Services/obj/
+Store.Web/obj/
+Store/obj/
