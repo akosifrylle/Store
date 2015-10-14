@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
-using Store.Entities;
+using Store.Common;
+using Store.Common;
 using Store.NHibernate.Repo;
 
 namespace Store.NHibernate

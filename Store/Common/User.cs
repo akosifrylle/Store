@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Store.Entities
+namespace Store.Common
 {
     public class User
     {

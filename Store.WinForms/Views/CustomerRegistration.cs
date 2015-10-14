@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Store.Entities;
+using Store.Common;
 using Store.Services;
 
 namespace Store.WinForms.Views

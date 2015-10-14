@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
-using Store.Entities;
+using Store.Common;
+using Store.Common;
 
 namespace Store.Services
 {

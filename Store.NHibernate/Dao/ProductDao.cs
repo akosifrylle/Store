@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using Store.Common;
 using Store.Data;
-using Store.Entities;
+using Store.Common;
 
 namespace Store.NHibernate.Dao
 {

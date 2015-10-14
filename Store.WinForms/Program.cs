@@ -25,6 +25,7 @@ namespace Store.WinForms
             Application.SetCompatibleTextRenderingDefault(false);
             AutoMapperConfig.Initialize();
 
+            //TODO : Refactor - Add to seperate class
             IUnityContainer unityContainer = new UnityContainer();
             unityContainer.RegisterType<IUserService, UserService>();
             unityContainer.RegisterType<IUserDao, UserDao>();

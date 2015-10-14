@@ -1,4 +1,4 @@
-﻿using Store.Entities;
+﻿using Store.Common;
 
 namespace Store.Data
 {

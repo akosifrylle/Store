@@ -2,7 +2,7 @@
 using System.Linq;
 using AutoMapper;
 using Store.Data;
-using Store.Entities;
+using Store.Common;
 using Store.NHibernate.Repo;
 
 namespace Store.NHibernate.Dao

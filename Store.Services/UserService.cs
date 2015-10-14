@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Store.Data;
-using Store.Entities;
+using Store.Common;
 
 namespace Store.Services
 {
@@ -34,7 +30,6 @@ namespace Store.Services
         {
             return _userDao.Get(username, password);
         }
-
 
         public User GetById(int id)
         {

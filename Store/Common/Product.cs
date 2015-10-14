@@ -1,4 +1,4 @@
-﻿namespace Store.Entities
+﻿namespace Store.Common
 {
     public class Product
     {
