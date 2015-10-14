@@ -1,4 +1,0 @@
-C:\Users\Frylle\Documents\Visual Studio 2013\Projects\NhibernateSample\Store.WinForms\bin\Debug\AutoMapper.dll
-C:\Users\Frylle\Documents\Visual Studio 2013\Projects\NhibernateSample\Store.WinForms\bin\Debug\Microsoft.Practices.Unity.dll
-C:\Users\Frylle\Documents\Visual Studio 2013\Projects\NhibernateSample\Store.WinForms\bin\Debug\FluentNHibernate.dll
-C:\Users\Frylle\Documents\Visual Studio 2013\Projects\NhibernateSample\Store.WinForms\bin\Debug\NHibernate.dll
