@@ -33,7 +33,7 @@ namespace Store.WinForms.Views
             {
                 MessageBox.Show("Customer Found");
                 Hide();
-                new CustomerRegistration(new UserService()).Show();
+                //CustomerRegistration = Unity.UnityContainer.Resolve<CustomerRegistration>;
             }
             else
             {

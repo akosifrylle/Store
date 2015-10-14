@@ -32,7 +32,7 @@ namespace Store.WinForms
 
             Unity.BuildUnityContainer();
 
-            Application.Run(new Login(unityContainer.Resolve<UserService>()));
+            Application.Run(new Login(Unity.UnityContainer.Resolve<UserService>()));
             //Application.Run(new CustomerRegistration(unityContainer.Resolve<UserService>()));
         }
     }

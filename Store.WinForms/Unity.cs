@@ -9,11 +9,24 @@ namespace Store.WinForms
     {
         private static IUnityContainer _unityContainer;
 
+        public static IUnityContainer UnityContainer
+        {
+            get
+            {
+                if (_unityContainer == null)
+                    BuildUnityContainer();
+                return _unityContainer;
+            }
+        }
+
         public static void BuildUnityContainer()
         {
             _unityContainer = new UnityContainer();
 
+            //Services
             _unityContainer.RegisterType<IUserService, UserService>();
+
+            //Dao
             _unityContainer.RegisterType<IUserDao, UserDao>();
         }
     }
