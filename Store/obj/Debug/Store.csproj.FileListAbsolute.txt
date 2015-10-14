@@ -1,5 +1,0 @@
-C:\Users\Frylle\Documents\Visual Studio 2013\Projects\Store\Store\bin\Debug\Store.dll
-C:\Users\Frylle\Documents\Visual Studio 2013\Projects\Store\Store\bin\Debug\Store.pdb
-C:\Users\Frylle\Documents\Visual Studio 2013\Projects\Store\Store\obj\Debug\Store.csprojResolveAssemblyReference.cache
-C:\Users\Frylle\Documents\Visual Studio 2013\Projects\Store\Store\obj\Debug\Store.dll
-C:\Users\Frylle\Documents\Visual Studio 2013\Projects\Store\Store\obj\Debug\Store.pdb

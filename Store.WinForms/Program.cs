@@ -26,9 +26,11 @@ namespace Store.WinForms
             AutoMapperConfig.Initialize();
 
             //TODO : Refactor - Add to seperate class
-            IUnityContainer unityContainer = new Unity();
+            IUnityContainer unityContainer = new UnityContainer();
             unityContainer.RegisterType<IUserService, UserService>();
             unityContainer.RegisterType<IUserDao, UserDao>();
+
+            Unity.BuildUnityContainer();
 
             Application.Run(new Login(unityContainer.Resolve<UserService>()));
             //Application.Run(new CustomerRegistration(unityContainer.Resolve<UserService>()));

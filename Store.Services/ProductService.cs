@@ -1,8 +1,10 @@
-﻿namespace Store.Services
+﻿using Store.Common;
+
+namespace Store.Services
 {
     public class ProductService : IProductService
     {
-        public Entities.Product AddProduct(Entities.Product product)
+        public Product AddProduct(Product product)
         {
             throw new System.NotImplementedException();
         }
@@ -17,12 +19,12 @@
             throw new System.NotImplementedException();
         }
 
-        public Entities.Product GetProductById(int id)
+        public Product GetProductById(int id)
         {
             throw new System.NotImplementedException();
         }
 
-        public System.Collections.Generic.IList<Entities.Product> GetProducts()
+        public System.Collections.Generic.IList<Product> GetProducts()
         {
             throw new System.NotImplementedException();
         }
