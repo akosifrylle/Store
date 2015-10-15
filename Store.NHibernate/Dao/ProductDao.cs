@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
+using AutoMapper;
 using Store.Common;
 using Store.Data;
-using Store.Common;
+using Store.NHibernate.Repo;
 
 namespace Store.NHibernate.Dao
 {
@@ -14,7 +15,29 @@ namespace Store.NHibernate.Dao
 
         public Product Add(Product product)
         {
-            throw new System.NotImplementedException();
+            var productRepo = Mapper.Map<ProductRepo>(product);
+
+            using (var session = NHibernateHelper.OpenSession())
+            {
+                session.BeginTransaction();
+
+                session.Save(productRepo);
+                session.Transaction.Commit();
+            }
+
+            return product;
+        }
+
+        public void Add(IList<Product> products)
+        {
+            var productsRepo = Mapper.Map<IList<ProductRepo>>(products);
+            using (var session = NHibernateHelper.OpenSession())
+            {
+                session.BeginTransaction();
+
+                session.Save(productsRepo);
+                session.Transaction.Commit();
+            }
         }
 
         public void Delete(int id)

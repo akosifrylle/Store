@@ -29,11 +29,13 @@ namespace Store.WinForms
             IUnityContainer unityContainer = new UnityContainer();
             unityContainer.RegisterType<IUserService, UserService>();
             unityContainer.RegisterType<IUserDao, UserDao>();
+            unityContainer.RegisterType<IProductService, ProductService>();
+            unityContainer.RegisterType<IProductDao, ProductDao>();
 
             Unity.BuildUnityContainer();
 
-            Application.Run(new Login(Unity.UnityContainer.Resolve<UserService>()));
-            //Application.Run(new CustomerRegistration(unityContainer.Resolve<UserService>()));
+            //Application.Run(new Login(Unity.UnityContainer.Resolve<UserService>()));
+            Application.Run(new ProductMaintenance(unityContainer.Resolve<ProductService>()));
         }
     }
 }

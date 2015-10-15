@@ -12,6 +12,7 @@ namespace Store.Data
     {
         Product GetById(int id);
         Product Add(Product product);
+        void Add(IList<Product> products);
         void Delete(int id);
         void AddStock(int id, int quantity);
         IList<Product> GetList();

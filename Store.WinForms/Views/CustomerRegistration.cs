@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Store.Common;
+using Store.NHibernate;
+using Store.NHibernate.Dao;
 using Store.Services;
 
 namespace Store.WinForms.Views
@@ -33,7 +35,7 @@ namespace Store.WinForms.Views
                 RegisteredDate = DateTime.Now
             };
 
-            this._customerService.Add(user);
+            _customerService.Add(user);
         }
 
     }
