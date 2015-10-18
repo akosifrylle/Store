@@ -25,9 +25,11 @@ namespace Store.WinForms
 
             //Services
             _unityContainer.RegisterType<IUserService, UserService>();
+            _unityContainer.RegisterType<IProductService, ProductService>();
 
             //Dao
             _unityContainer.RegisterType<IUserDao, UserDao>();
+            _unityContainer.RegisterType<IProductDao, ProductDao>();
         }
     }
 }

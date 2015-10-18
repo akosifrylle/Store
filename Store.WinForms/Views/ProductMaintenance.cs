@@ -16,17 +16,23 @@ namespace Store.WinForms.Views
     {
         private readonly IProductService _productService;
 
-        public ProductMaintenance(IProductService productService)
+        public ProductMaintenance()
+        {
+            InitializeComponent();
+        }
+
+        public ProductMaintenance(IProductService productService) : this()
         {
             _productService = productService;
-            InitializeComponent();
+
+            dgvProducts.DataSource = _productService.GetProducts();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             var product1 = new Product()
             {
-                Name = "Iphone5",
+                Name = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
                 Description = "Very slow iphone fucking shit",
                 Price = 240.25m,
                 Stock = 100
@@ -44,8 +50,6 @@ namespace Store.WinForms.Views
 
             products.Add(product1);
             products.Add(product2);
-
-            _productService.AddProduct(product1);
 
             _productService.AddProducts(products);;
         }

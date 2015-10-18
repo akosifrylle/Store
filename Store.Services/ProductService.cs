@@ -35,9 +35,8 @@ namespace Store.Services
 
         public IList<Product> GetProducts()
         {
-            throw new System.NotImplementedException();
+            return _productDao.GetList();
         }
-
 
         public void AddProducts(IList<Product> products)
         {

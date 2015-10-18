@@ -24,18 +24,7 @@ namespace Store.WinForms
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             AutoMapperConfig.Initialize();
-
-            //TODO : Refactor - Add to seperate class
-            IUnityContainer unityContainer = new UnityContainer();
-            unityContainer.RegisterType<IUserService, UserService>();
-            unityContainer.RegisterType<IUserDao, UserDao>();
-            unityContainer.RegisterType<IProductService, ProductService>();
-            unityContainer.RegisterType<IProductDao, ProductDao>();
-
-            Unity.BuildUnityContainer();
-
-            //Application.Run(new Login(Unity.UnityContainer.Resolve<UserService>()));
-            Application.Run(new ProductMaintenance(unityContainer.Resolve<ProductService>()));
+            Application.Run(Unity.UnityContainer.Resolve<Login>());
         }
     }
 }
