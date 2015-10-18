@@ -30,6 +30,8 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.dgvProducts = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnAddStocks = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,17 +53,37 @@
             this.dgvProducts.Size = new System.Drawing.Size(436, 176);
             this.dgvProducts.TabIndex = 1;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(501, 76);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 2;
+            // 
+            // btnAddStocks
+            // 
+            this.btnAddStocks.Location = new System.Drawing.Point(608, 72);
+            this.btnAddStocks.Name = "btnAddStocks";
+            this.btnAddStocks.Size = new System.Drawing.Size(75, 23);
+            this.btnAddStocks.TabIndex = 3;
+            this.btnAddStocks.Text = "Add";
+            this.btnAddStocks.UseVisualStyleBackColor = true;
+            this.btnAddStocks.Click += new System.EventHandler(this.btnAddStocks_Click);
+            // 
             // ProductMaintenance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(715, 263);
+            this.Controls.Add(this.btnAddStocks);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dgvProducts);
             this.Controls.Add(this.button1);
             this.Name = "ProductMaintenance";
             this.Text = "ProductMaintenance";
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -69,5 +91,7 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dgvProducts;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnAddStocks;
     }
 }

@@ -72,7 +72,18 @@ namespace Store.NHibernate.Dao
 
         public void AddStock(int id, int quantity)
         {
-            throw new System.NotImplementedException();
+            using (var session = NHibernateHelper.OpenSession())
+            {
+                var productRepo = session.Get<ProductRepo>(id);
+
+                if (productRepo != null)
+                {
+                    session.BeginTransaction();
+                    productRepo.Stock += quantity;
+                    session.SaveOrUpdate(productRepo);
+                    session.Transaction.Commit();
+                }
+            }
         }
 
         public IList<Product> GetList()

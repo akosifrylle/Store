@@ -53,5 +53,10 @@ namespace Store.WinForms.Views
 
             _productService.AddProducts(products);;
         }
+
+        private void btnAddStocks_Click(object sender, EventArgs e)
+        {
+            _productService.AddStock(2, 5);
+        }
     }
 }

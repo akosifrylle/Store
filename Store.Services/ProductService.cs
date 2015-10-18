@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Store.Common;
 using Store.Data;
+using Store.NHibernate;
 
 namespace Store.Services
 {
@@ -20,7 +21,7 @@ namespace Store.Services
 
         public void AddStock(int id, int quantity)
         {
-            throw new System.NotImplementedException();
+            _productDao.AddStock(id, quantity);
         }
 
         public void DeleteProduct(int id)
