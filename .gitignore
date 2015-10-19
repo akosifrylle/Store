@@ -9,3 +9,4 @@ Store.Services/bin/
 Store.Services/obj/
 Store.Web/obj/
 Store/obj/
+.vs/config/applicationhost.config
