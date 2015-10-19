@@ -25,6 +25,7 @@ namespace Store.NHibernate
                 .Not.Nullable();
             Map(x => x.RegisteredDate)
                 .CustomType("date").Not.Nullable();
+            Map(x => x.IsAdmin);
         }
     }
 }

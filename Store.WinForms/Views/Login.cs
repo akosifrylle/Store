@@ -26,7 +26,7 @@ namespace Store.WinForms.Views
 
             var user = _userService.Get(username, password);
 
-            if (user != null)
+            if (user != null && user.IsAdmin)
             {
                 MessageBox.Show("Customer Found");
                 Hide();
