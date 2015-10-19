@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Store.Common
 {
@@ -11,5 +12,6 @@ namespace Store.Common
         public string Password { get; set; }
         public DateTime RegisteredDate { get; set; }
         public bool IsAdmin { get; set; }
+        public IList<Order> Orders { get; set; } 
     }
 }

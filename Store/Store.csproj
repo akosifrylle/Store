@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\Order.cs" />
     <Compile Include="Data\IProductDao.cs" />
     <Compile Include="Data\IUserDao.cs" />
     <Compile Include="Common\Product.cs" />

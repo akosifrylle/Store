@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Store.NHibernate.Repo
 {
@@ -11,5 +12,6 @@ namespace Store.NHibernate.Repo
         public virtual string Password { get; set; }
         public virtual DateTime RegisteredDate { get; set; }
         public virtual bool IsAdmin { get; set; }
+        public virtual IList<OrderRepo> Orders { get; set; }
     }
 }
