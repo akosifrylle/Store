@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="AutoMapperConfig.cs" />
     <Compile Include="Dao\ProductDao.cs" />
+    <Compile Include="Mappings\OrderMap.cs" />
     <Compile Include="Mappings\ProductMap.cs" />
     <Compile Include="Mappings\UserMap.cs" />
     <Compile Include="Dao\UserDao.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="Repo\ProductRepo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Database\NhibernateSample.bak" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
