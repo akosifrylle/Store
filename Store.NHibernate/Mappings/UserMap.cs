@@ -1,4 +1,9 @@
-﻿using FluentNHibernate.Mapping;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using FluentNHibernate.Mapping;
 using Store.NHibernate.Repo;
 
 namespace Store.NHibernate
@@ -21,8 +26,6 @@ namespace Store.NHibernate
             Map(x => x.RegisteredDate)
                 .CustomType("date").Not.Nullable();
             Map(x => x.IsAdmin);
-            HasMany(x => x.Orders)
-                .Inverse();
         }
     }
 }
