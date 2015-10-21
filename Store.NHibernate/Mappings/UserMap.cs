@@ -21,7 +21,7 @@ namespace Store.NHibernate
             Map(x => x.RegisteredDate)
                 .CustomType("date").Not.Nullable();
             Map(x => x.IsAdmin);
-            HasMany(x => x.Orders)
+            HasMany(x => x.Orders).Cascade.All().LazyLoad()
                 .Inverse();
         }
     }

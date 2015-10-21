@@ -18,6 +18,8 @@ namespace Store.NHibernate
             Mapper.CreateMap<UserRepo, User>();
             Mapper.CreateMap<Product, ProductRepo>();
             Mapper.CreateMap<ProductRepo, Product>();
+            Mapper.CreateMap<Order, OrderRepo>();
+            Mapper.CreateMap<OrderRepo, Order>();
         }
     }
 }
