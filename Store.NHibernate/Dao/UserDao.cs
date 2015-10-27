@@ -31,7 +31,7 @@ namespace Store.NHibernate.Dao
 
         public User Get(string username, string password)
         {
-            
+            var userGlobal = new UserRepo();
             using (var session = NHibernateHelper.OpenSession())
             {
                 //Using QueryOver
@@ -41,8 +41,12 @@ namespace Store.NHibernate.Dao
                 //Using HQL
                 //var user = session.CreateQuery("from User u where u.FirstName=:un")
                     //.SetString("un", "Frylle").List<UserRepo>();
-                return Mapper.Map<User>(user);
+                userGlobal = user;
+                //return Mapper.Map<User>(user);
             }
+
+
+            return new User();
         }
 
         public User GetById(int id)
